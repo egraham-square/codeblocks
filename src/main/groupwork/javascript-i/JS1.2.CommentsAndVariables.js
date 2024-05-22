@@ -94,7 +94,9 @@ var city;
 /*
 2.2
 Add a semicolon at the end of the variable declaration below
-Note: Javascript doesn't strictly require semicolons at the end of code, but it's best practice!
+Notes:
+- Javascript doesn't strictly require semicolons at the end of code, but it's best practice!
+- There is no test case for this problem!
 */
 var continent
 
@@ -125,7 +127,7 @@ Declare a variable below named "numberOfContinents"
 Declare a variable below that stores the number of countries. Give it an appropriate name.
 *
 
-// checkAnswer('2.5');
+// checkAnswer('2.6');
 
 /* ______________________ PART 3 ______________________
 Assigning Variables
@@ -434,7 +436,7 @@ function checkAnswer(exercise) {
             break;
         case '4.4':
             isInitializedVariable('sacramentoState');
-            checkVariable('losAngelosState', sacramentoState);
+            checkVariable('losAngelesState', sacramentoState);
             checkVariable('sanFranciscoState', sacramentoState);
             break;
         case '4.5':
