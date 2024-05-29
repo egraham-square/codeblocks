@@ -116,7 +116,8 @@ Var vs Const vs Let
 
 /*
 4.1
-- On a separate line, reassign the variable below to 'New York', run the code and observe that there are no errors
+- On a separate line, reassign the variable below to 'New York', run the code (without uncommenting the checkAnswer) and
+  observe that there are no errors
 - Change the let to a const, and re-run the code. Observe the error and explain it to your group!
 - I guess we can't change a constant, so let's leave Atlanta as the best city (delete the reassignment)
 - Check your answer!
