@@ -301,8 +301,8 @@ function checkAnswer(exercise) {
             checkVariable('bestCity', 'Atlanta');
             break;
         case '4.2':
-            isInitializedVariable('haveVisitedNewEngland');
-            isInitializedVariable('originalNewEnglandColonies');
+            isInitializedVariable('coolestCountry');
+            isInitializedVariable('countryNorthOfUnitedStates');
             isInitializedVariable('cityBornIn');
             isInitializedVariable('cityLiveIn');
             break;
