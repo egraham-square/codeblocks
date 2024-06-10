@@ -6,74 +6,74 @@ Remainder Operator
 1.1
 Change the 7 below to get the remainder to equal 0
 */
-const COOL_REMAINDER = 7 % 2;
+const COOL_REMAINDER = 8 % 2;
 
 // Uncomment below to check your answer
-// checkAnswer('1.1');
+checkAnswer('1.1');
 
 /*
 1.2
 Change the 16 below to get the remainder to equal 1
 */
-const FUN_REMAINDER = 16 % 2;
+const FUN_REMAINDER = 15 % 2;
 
-// checkAnswer('1.2');
+checkAnswer('1.2');
 
 /*
 1.3
 Change the zero below to get the remainder to equal 1
 */
-const NEAT_REMAINDER = 9 % 0;
+const NEAT_REMAINDER = 9 % 8;
 
-// checkAnswer('1.3');
+checkAnswer('1.3');
 
 /*
 1.4
 Change the zero below to get the remainder to equal 0
 */
-const GOOD_REMAINDER = 12 % 0;
+const GOOD_REMAINDER = 12 % 6;
 
-// checkAnswer('1.4');
+checkAnswer('1.4');
 
 /*
 1.5
 Change the zero below to get the remainder to equal 0
 */
-const GROOVY_REMAINDER = 0 % 5;
+const GROOVY_REMAINDER = 25 % 5;
 
-// checkAnswer('1.5');
+checkAnswer('1.5');
 
 /*
 1.6
 Change the zero below to get the remainder to equal 1
 */
-const RAD_REMAINDER = 0 % 5;
+const RAD_REMAINDER = 16 % 5;
 
-// checkAnswer('1.6');
+checkAnswer('1.6');
 
 /*
 1.7
 Change the zero below to get the remainder to equal 3
 */
-const FUNKY_REMAINDER = 0 % 5;
+const FUNKY_REMAINDER = 18 % 5;
 
-// checkAnswer('1.7');
+checkAnswer('1.7');
 
 /*
 1.8
 Change the zero below to get the remainder to equal 4
 */
-const SUPER_REMAINDER = (8 + 0) % 8;
+const SUPER_REMAINDER = (8 + 36) % 8;
 
-// checkAnswer('1.8');
+checkAnswer('1.8');
 
 /*
 1.9
 Change the zero below to get the remainder to equal 0
 */
-const GREAT_REMAINDER = (0 + 75) % 10;
+const GREAT_REMAINDER = (15 + 75) % 10;
 
-// checkAnswer('1.9');
+checkAnswer('1.9');
 
 /* ______________________ PART 2 ______________________
 Evaluating Compound Assignments
@@ -85,19 +85,19 @@ Change the zero below so that the final variable equals 9
 */
 
 let greatSum = 5;
-greatSum += 0;
+greatSum += 4;
 
-// checkAnswer('2.1');
+checkAnswer('2.1');
 
 /*
 2.2
 Change the zero below so that the final variable equals 9
 */
 
-let bestSum = 0;
+let bestSum = 2;
 bestSum += 7;
 
-// checkAnswer('2.2');
+checkAnswer('2.2');
 
 /*
 2.3
@@ -105,45 +105,47 @@ Change the zero below so that the final variable equals 9
 */
 
 let bestDifference = 16;
-bestDifference -= 0;
+bestDifference -= 7;
 
-// checkAnswer('2.3');
+checkAnswer('2.3');
 
 /*
 2.4
 Change the zero below so that the final variable equals 9
 */
 
-let bestQuotient = 0;
+let bestQuotient = 90;
 bestQuotient /= 10;
 
-// checkAnswer('2.4');
+checkAnswer('2.4');
 
 /*
 2.5
 Change the zero below so that the final variable equals 9
 */
 
-let bestProduct = 0;
+let bestProduct = 3;
 bestProduct *= 3;
 
-// checkAnswer('2.5');
+checkAnswer('2.5');
 
 /*
 2.6
 Use compound assignment to get the final value of the variable equal to 9
 */
 let groovySum = 7;
+groovySum += 2;
 
-// checkAnswer('2.6');
+checkAnswer('2.6');
 
 /*
 2.7
 Use compound assignment to get the final value of the variable equal to 9
 */
 let groovyDifference = 12;
+groovyDifference -= 3;
 
-// checkAnswer('2.7');
+checkAnswer('2.7');
 
 /*
 2.8
@@ -151,8 +153,9 @@ Let's go forward in time!
 - Create a variable named thisYear and set it equal to the current year
 - Use compound assignment to fast forward 22 years
 */
-
-// checkAnswer('2.8');
+thisYear = 2024;
+thisYear += 22;
+checkAnswer('2.8');
 
 /*
 2.9
@@ -160,8 +163,9 @@ Let's go back in time!
 - Create a variable named thatYear and set it equal to the current year
 - Use compound assignment to rewind 1,000 years
 */
-
-// checkAnswer('2.9');
+thatYear = 2024;
+thatYear -= 1000;
+checkAnswer('2.9');
 
 /*
 2.10
@@ -170,7 +174,7 @@ You haven't seen compound remainder assignment yet (%=), but can you guess how i
 - Change the zero below to any value such that the final variable equals 9
 */
 
-let bestRemainder = 0;
+let bestRemainder = 99;
 bestRemainder %= 10;
 
 // checkAnswer('2.10');
@@ -184,36 +188,36 @@ Compound Assignment vs Simple Assignment
 Rework the operation below to use compound assignment
 */
 let funSum = 3;
-funSum = funSum + 5;
+funSum += 5;
 
-// checkAnswer('3.1');
+checkAnswer('3.1');
 
 /*
 3.2
 Rework the operation below to use compound assignment
 */
 let funProduct = 3;
-funProduct = funProduct * 5;
+funProduct *= 5;
 
-// checkAnswer('3.2');
+checkAnswer('3.2');
 
 /*
 3.3
 Switch the compound assignment below to use non-compound assignment
 */
 let coolProduct = 3;
-coolProduct *= 5;
+coolProduct = coolProduct * 5;
 
-// checkAnswer('3.3');
+checkAnswer('3.3');
 
 /*
 3.4
 Switch the compound assignment below to use non-compound assignment
 */
 let coolQuotient = 15;
-coolQuotient /= 5;
+coolQuotient = coolQuotient / 5;
 
-// checkAnswer('3.4');
+checkAnswer('3.4');
 
 /* ______________________ PART 4 ______________________
 Compound Assignment vs Increment/Decrement
@@ -226,36 +230,36 @@ Switch from the increment operator to compound assignment
 hint: The increment operator just adds one to the variable.
 */
 let neatSum = 3;
-neatSum++;
+neatSum += 1;
 
-// checkAnswer('4.1');
+checkAnswer('4.1');
 
 /*
 4.2
 Switch from the decrement operator to compound assignment
 */
 let neatDifference = 3;
-neatDifference--;
+neatDifference -= 1;
 
-// checkAnswer('4.2');
+checkAnswer('4.2');
 
 /*
 4.3
 Switch from compound assignment to the decrement operator
 */
 let radDifference = 3;
-radDifference -= 1;
+radDifference--;
 
-// checkAnswer('4.3');
+checkAnswer('4.3');
 
 /*
 4.4
 Switch from compound assignment to the increment operator
 */
 let radSum = 3;
-radSum += 1;
+radSum++;
 
-// checkAnswer('4.4');
+checkAnswer('4.4');
 
 /* ______________________ BONUS ______________________
 Extra Practice
@@ -268,7 +272,9 @@ We're having pie! There are 5 people sharing the pie, which is already cut into 
 - Using the remainder operator, set LEFTOVER_PIECES equal to the number of pieces left after everyone has had their slice of pie
 */
 
-// checkAnswer('5.1');
+const LEFTOVER_PIECES = 8 % 5;
+
+checkAnswer('5.1');
 
 /*
 5.2
@@ -293,10 +299,10 @@ In the code below we're calculating how many meals we need to prepare for the we
 - Replace the hardcoded 3 with a constant called MEALS_IN_DAY (aka, "extract" the variable)
 - Replace the hardcoded 7 with a constant called DAYS_IN_WEEK
 */
-
-const PREP = 3 * 7;
-
-// checkAnswer('5.2');
+const MEALS_IN_DAY = 3;
+const DAYS_IN_WEEK = 7;
+const MEALS_IN_WEEK = MEALS_IN_DAY * DAYS_IN_WEEK;
+checkAnswer('5.2');
 
 /*
 5.3
@@ -309,7 +315,11 @@ If each person gets the same number of slices, how many slices of pizza will be 
 - Create a variable called LEFTOVER_PIZZA and initialize it to the number of slices we'll have left after dividing the pizza up amongst the friends (hint: make sure you're using the remainder operator and the variable you declared above)
 */
 
-// checkAnswer('5.3');
+const TOTAL_SLICES = 10;
+const NUM_PEOPLE = 3;
+const LEFTOVER_PIZZA = TOTAL_SLICES % NUM_PEOPLE;
+
+checkAnswer('5.3');
 
 /* ______________________ STOP HERE ______________________
 Below this is a bunch of stuff you don't need to worry about yet!
