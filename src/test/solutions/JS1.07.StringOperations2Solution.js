@@ -6,50 +6,52 @@ String Length
 1.1
 Change the string literal below to "green" instead of "red"
 */
-const greenLength = "red".length
+const greenLength = "green".length
 
-// checkAnswer('1.1');
+checkAnswer('1.1');
 
 /*
 1.2
 Set the variable below equal to the string literal's length (using the length property)
 */
-const blueLength = "blue"
+const blueLength = "blue".length;
 
-// checkAnswer('1.2');
+checkAnswer('1.2');
 
 /*
 1.3
 Set the variable below equal to the length of the string "yellow"
 */
-const yellowLength = "";
+const yellowLength = "yellow".length;
 
-// checkAnswer('1.3');
+checkAnswer('1.3');
 
 /*
 1.4
 Create a variable called orangeLength and set it equal to the length of the string "orange"
 */
-
-// checkAnswer('1.4');
+const orangeLength = "orange".length;
+checkAnswer('1.4');
 
 /*
 1.5
 - Set purpleColor equal to "purple"
 - Set purpleLength equal to the length of the purpleColor variable
 */
-const purpleColor = "";
-const purpleLength = "";
+const purpleColor = "purple";
+const purpleLength = purpleColor.length;
 
-// checkAnswer('1.5');
+checkAnswer('1.5');
 
 /*
 1.6
 - Create a variable called brownColor and set it equal to "brown"
 - Create a variable called brownLength and set it equal to the length of the brownColor variable
 */
+const brownColor = "brown";
+const brownLength = brownColor.length;
 
-// checkAnswer('1.6');
+checkAnswer('1.6');
 
 /* ______________________ PART 2 ______________________
 String Indexing
@@ -59,30 +61,27 @@ String Indexing
 2.1
 Change the index below so that greenLetter equals 'r'
 */
+const greenLetter = "green"[1];
 
-const greenLetter = "green"[0];
-
-// checkAnswer('2.1');
+checkAnswer('2.1');
 
 /*
 2.2
 Change the index below so that blueLetter equals 'u'
 */
-
 const blueColor = "blue";
-const blueLetter = blueColor[0];
+const blueLetter = blueColor[2];
 
-// checkAnswer('2.2');
+checkAnswer('2.2');
 
 /*
 2.3
 Change the index below so that pinkLetter equals 'k'
 */
-
 const pinkColor = "pink";
-const pinkLetter = pinkColor[0];
+const pinkLetter = pinkColor[3];
 
-// checkAnswer('2.3');
+checkAnswer('2.3');
 
 /*
 2.4
@@ -90,33 +89,30 @@ const pinkLetter = pinkColor[0];
 - What is the value of tealLetter? Can you explain why it's that value?
 - Change the index so that tealLetter equals the last letter in tealColor
 */
-
 const tealColor = "teal";
-const tealLetter = tealColor[4];
+const tealLetter = tealColor[3];
 
-// checkAnswer('2.4');
+checkAnswer('2.4');
 
 /*
 2.5
 We're trying to find the last letter in indigoColor, but our index isn't quite right.
 - Can you update the index value so that it equals the last index in indigoColor?
 */
-
 const indigoColor = "indigo";
-const indigoIndex = indigoColor.length - 3;
+const indigoIndex = indigoColor.length - 1;
 const indigoLetter = indigoColor[indigoIndex];
 
-// checkAnswer('2.5');
+checkAnswer('2.5');
 
 /*
 2.6
 - Set burgundyLetter equal to the last character in burgundyColor (use the length property!)
 */
-
 const burgundyColor = "burgundy";
-const burgundyLetter = "";
+const burgundyLetter = burgundyColor[burgundyColor.length - 1];
 
-// checkAnswer('2.6');
+checkAnswer('2.6');
 
 /*
 2.7
@@ -124,8 +120,9 @@ Let's find the second-to-last letter in "turquoise"
 - Create a variable called turquoiseColor and set it equal to "turquoise"
 - Create a variable called turquoiseLetter and set it equal to the second-to-last letter in turquoiseColor (use the length property!)
 */
-
-// checkAnswer('2.7');
+let turquoiseColor = "turquoise"
+let turquoiseLetter = turquoiseColor[turquoiseColor.length -2]
+checkAnswer('2.7');
 
 /* ______________________ PART 3 ______________________
 Bonus
@@ -143,8 +140,14 @@ const silverColor = "silver";
 
 let programName = "";
 programName += silverColor[0];
+programName += aquamarineColor[1];
+programName += periwinkleColor[3];
+programName += silverColor[2];
+programName += silverColor[2];
+programName += aquamarineColor[2];
+programName += periwinkleColor[0];
 
-// checkAnswer('3.1');
+checkAnswer('3.1');
 
 /*
 3.2
@@ -153,7 +156,9 @@ Let's build "square" using just the letters from the same colors as above. But t
 - Using string concatenation, combine letters from the strings above to get companyName equal to "square"
 */
 
-// checkAnswer('3.2');
+const companyName = silverColor[0] + aquamarineColor[1] + aquamarineColor[2] + aquamarineColor[0] + periwinkleColor[2] + silverColor[4]
+
+checkAnswer('3.2');
 
 /*
 3.3
@@ -162,11 +167,11 @@ We want violetLetter to equal "o", but our index isn't quite right.
 */
 
 const violetColor = "violet";
-let violetIndex = 1;
+let violetIndex = 2;
 
 const violetLetter = violetColor[violetIndex];
 
-// checkAnswer('3.3');
+checkAnswer('3.3');
 
 /*
 3.4
@@ -175,11 +180,11 @@ We want lavenderLetter to equal "n", but our index isn't quite right.
 */
 
 const lavenderColor = "lavender";
-const lavenderIndex = lavenderColor.length - 1;
+const lavenderIndex = lavenderColor.length - 4;
 
 const lavenderLetter = lavenderColor[lavenderIndex];
 
-// checkAnswer('3.4');
+checkAnswer('3.4');
 
 /* ______________________ STOP HERE ______________________
 Below this is a bunch of stuff you don't need to worry about yet!

@@ -6,10 +6,10 @@ Initializing variables
 1.1
 Rename the variable below to ourPlanet
 */
-const myPlanet = 'Earth';
+const ourPlanet = 'Earth';
 
 // Uncomment below to check your answer
-// checkAnswer('1.1');
+checkAnswer('1.1');
 
 /*
 1.2
@@ -17,48 +17,53 @@ Rewrite the code below so that the variable is initialized on the same line as t
 
 Note: Having the declaration and initialization on the same line is generally better practice. Separating them can lead to messier code.
 */
-let funCity;
-funCity = 'Zootopia';
+let funCity = 'Zootopia';
 
-// checkAnswer('1.2');
+checkAnswer('1.2');
 
 /*
 1.3
 Even though it's messier, just for practice, rewrite the code below so that the variable initialization happens on a different line than the declaration.
 */
-let numberCountries = 195;
+let numberCountries
+numberCountries = 195;
 
-// checkAnswer('1.3');
+checkAnswer('1.3');
 
 /*
 1.4
 On the same line as the declaration, initialize myState to the state or region you live in.
 */
-let myState;
+let myState = `Missouri`;
 
-// checkAnswer('1.4');
+checkAnswer('1.4');
 
 /*
 1.5
 Create a variable called myContinent and initialize it to the continent you live in
 */
+let myContinent = 'North America'
 
-// checkAnswer('1.5');
+checkAnswer('1.5');
 
 /*
 1.6
 Create a variable called numberContinentsVisited and initialize it to the number of continents you've been to
 */
+let numberContinentsVisited = 4
 
-// checkAnswer('1.6');
+checkAnswer('1.6');
 
 /*
 1.7
 - Create a variable called vacationCountry and set it equal to somewhere you've been or want to go
 - Create variables called placeToRelax and placeToEatGoodFood and initialize them both equal to vacationCountry.
 */
+let vacationCountry = `France`
+let placeToRelax = vacationCountry
+let placeToEatGoodFood = vacationCountry
 
-// checkAnswer('1.7');
+checkAnswer('1.7');
 
 /* ______________________ PART 2 ______________________
 Uninitialized Variables
@@ -68,18 +73,17 @@ Uninitialized Variables
 2.1
 Make coolCity undefined by deleting the initialization.
 */
-var coolCity = "Portland";
+var coolCity;
 
-// checkAnswer('2.1');
+checkAnswer('2.1');
 
 /*
 2.2
 Make numberStates undefined by deleting the initialization.
 */
 var numberStates;
-numberStates = 50;
 
-// checkAnswer('2.2');
+checkAnswer('2.2');
 
 /* ______________________ PART 3 ______________________
 Case Sensitivity
@@ -89,12 +93,12 @@ Case Sensitivity
 3.1
 Convert all of the variable names below to camelCase
 */
-var MyCity;
-var YOUR_CITY;
-var our_city;
-var theircity;
+var myCity;
+var yourCity;
+var ourCity;
+var theirCity;
 
-// checkAnswer('3.1');
+checkAnswer('3.1');
 
 /*
 3.2
@@ -102,13 +106,13 @@ You live in a town up north and your friend lives in a city down south, but the 
 - Fix the casing on NORTH_TOWN (in both places it occurs!)
 - Fix the casing on SouthTown (in both places it occurs!)
 */
-var NORTH_TOWN = 'Manhattan';
-var SouthTown = 'Atlanta';
+var northTown = 'Manhattan';
+var southTown = 'Atlanta';
 
-var myTown = NORTH_TOWN;
-var friendTown = SouthTown;
+var myTown = northTown;
+var friendTown = southTown;
 
-// checkAnswer('3.2');
+checkAnswer('3.2');
 
 /* ______________________ PART 4 ______________________
 Var vs Const vs Let
@@ -122,10 +126,9 @@ Var vs Const vs Let
 - I guess we can't change a constant, so let's leave Atlanta as the best city (delete the reassignment)
 - Check your answer!
 */
+const bestCity = 'Atlanta';
 
-let bestCity = 'Atlanta';
-
-// checkAnswer('4.1');
+checkAnswer('4.1');
 
 /*
 4.2
@@ -134,13 +137,15 @@ let bestCity = 'Atlanta';
 - Change every var to either let or const (choose wisely!)
 */
 
-var coolestCountry;
-var countryNorthOfUnitedStates;
+let coolestCountry;
+coolestCountry = "Costa Rica"
+const countryNorthOfUnitedStates = "Canada"
 
-var cityBornIn;
-var cityLiveIn;
+const cityBornIn = "Roswell"
+let cityLiveIn;
+cityLiveIn = "Atlanta"
 
-// checkAnswer('4.2');
+checkAnswer('4.2');
 
 /* ______________________ PART 5 ______________________
 Bonus
@@ -160,11 +165,11 @@ Bonus Bonus
 const westCoastCity = 'San Francisco';
 const eastCoastCity = 'New York';
 
-const previousCity = "";
-const currentCity = "";
-const futureCity = "";
+const previousCity = westCoastCity
+const currentCity = eastCoastCity
+const futureCity = westCoastCity;
 
-// checkAnswer('5.1');
+checkAnswer('5.1');
 
 /*
 5.2
@@ -181,7 +186,12 @@ Note: This is just practice to show you what's possible in JavaScript. You can r
 While it's good to know that this is an option, it should be used sparingly since reassigning variables can make code hard to follow.
 */
 
-// checkAnswer('5.2');
+const oldFavFood = 'pizza';
+const newFavFood = 'sushi';
+const dinner = newFavFood;
+let lunch = newFavFood;
+lunch = oldFavFood;
+checkAnswer('5.2');
 
 /* ______________________ STOP HERE ______________________
 Below this is a bunch of stuff you don't need to worry about yet!
