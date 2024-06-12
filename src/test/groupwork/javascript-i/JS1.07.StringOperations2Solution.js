@@ -113,7 +113,7 @@ checkAnswer('2.5');
 
 /*
 2.6
-- Set BERGUNDY_LETTER equal to the last character in BERGUNDY_COLOR (use the length property!)
+- Set BURGUNDY_LETTER equal to the last character in BURGUNDY_COLOR (use the length property!)
 */
 
 const BERGUNDY_COLOR = "burgundy";

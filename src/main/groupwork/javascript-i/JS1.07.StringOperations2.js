@@ -110,11 +110,11 @@ const INDIGO_LETTER = INDIGO_COLOR[INDIGO_INDEX];
 
 /*
 2.6
-- Set BERGUNDY_LETTER equal to the last character in BERGUNDY_COLOR (use the length property!)
+- Set BURGUNDY_LETTER equal to the last character in BURGUNDY_COLOR (use the length property!)
 */
 
-const BERGUNDY_COLOR = "burgundy";
-const BERGUNDY_LETTER = "";
+const BURGUNDY_COLOR = "burgundy";
+const BURGUNDY_LETTER = "";
 
 // checkAnswer('2.6');
 
@@ -281,7 +281,7 @@ function checkAnswer(exercise) {
             checkVariable('INDIGO_LETTER', INDIGO_COLOR[INDIGO_INDEX]);
             break;
         case '2.6':
-            checkVariable('BERGUNDY_LETTER', BERGUNDY_COLOR[BERGUNDY_COLOR.length - 1]);
+            checkVariable('BURGUNDY_LETTER', BURGUNDY_COLOR[BURGUNDY_COLOR.length - 1]);
             break;
         case '2.7':
             checkVariable('TURQUOISE_COLOR', 'turquoise');
