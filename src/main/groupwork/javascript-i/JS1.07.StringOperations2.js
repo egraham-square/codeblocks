@@ -121,8 +121,8 @@ const BERGUNDY_LETTER = "";
 /*
 2.7
 Let's find the second-to-last letter in "turquoise"
-- Create a variable called TURQUISE_COLOR and set it equal to "turquoise"
-- Create a variable called TURQUISE_LETTER and set it equal to the second-to-last letter in TURQUISE_COLOR (use the length property!)
+- Create a variable called TURQUOISE_COLOR and set it equal to "turquoise"
+- Create a variable called TURQUOISE_LETTER and set it equal to the second-to-last letter in TURQUOISE_COLOR (use the length property!)
 */
 
 // checkAnswer('2.7');
@@ -284,8 +284,8 @@ function checkAnswer(exercise) {
             checkVariable('BERGUNDY_LETTER', BERGUNDY_COLOR[BERGUNDY_COLOR.length - 1]);
             break;
         case '2.7':
-            checkVariable('TURQUISE_COLOR', 'turquoise');
-            checkVariable('TURQUISE_LETTER', TURQUISE_COLOR[TURQUISE_COLOR.length - 2]);
+            checkVariable('TURQUOISE_COLOR', 'turquoise');
+            checkVariable('TURQUOISE_LETTER', TURQUOISE_COLOR[TURQUOISE_COLOR.length - 2]);
             break;
         case '2.8':
             checkVariable('', '');
