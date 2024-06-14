@@ -181,6 +181,7 @@ const darkReds = ['burgundy', 'maroon']
 Using any (or all) of the operations we've learned (one or more times), fill in the rainbow array from the other two arrays, achieving a final value of: ['red', 'orange', 'yellow', 'green', 'blue', 'purple']
 
 Note: the other two arrays should end up empty.
+Bonus: can you get your solution down to 6 lines if it's not already?
 */
 
 const rainbow = []
