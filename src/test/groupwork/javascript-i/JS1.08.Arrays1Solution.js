@@ -7,39 +7,41 @@ Initializing Arrays
 Change "red" to "yellow" (literally just change the value in initialization)
 */
 
-const colorsA = ['blue', 'green', 'red'];
-// checkAnswer('1.1');
+const colorsA = ['blue', 'green', 'yellow'];
+checkAnswer('1.1');
 
 /*
 1.2
 Add "pink" to the end of the array (literally just add the value in initialization)
 */
 
-const colorsB = ['blue', 'green', 'red'];
-// checkAnswer('1.2');
+const colorsB = ['blue', 'green', 'red', 'pink'];
+checkAnswer('1.2');
 
 /*
 1.3
 Fill in the empty array below with two colors of your choice (literally just add them between the brackets)
 */
 
-const colorsC = [];
-// checkAnswer('1.3');
+const colorsC =  ['green', 'purple'];
+checkAnswer('1.3');
 
 /*
 1.4
 Fill in the empty array below with "black", "orange", and the number 31
 */
 
-const colorsD = [];
-// checkAnswer('1.4');
+const colorsD = ["black", "orange", 31];
+checkAnswer('1.4');
 
 /*
 1.5
 Create an array called colorsOfFall that contains "red" "yellow" and "orange"
 */
 
-// checkAnswer('1.5');
+const colorsOfFall = ["red", "yellow", "orange"];
+
+checkAnswer('1.5');
 
 /*
 1.6
@@ -56,11 +58,12 @@ const daysInMonths = [
     ['July', 31],
     ['August', 31],
     ['September', 30],
+    ['October', 31],
     ['November', 30],
     ['December', 31],
 ];
 
-// checkAnswer('1.6');
+checkAnswer('1.6');
 
 /*
 1.7
@@ -70,10 +73,11 @@ We're missing Fall!
 const monthsBySeason = [
     ['Spring', ['March', 'April', 'May']],
     ['Summer', ['June', 'July', 'August']],
+    ['Fall', ['September', 'October', 'November']],
     ['Winter', ['December', 'January', 'February']],
 ];
 
-// checkAnswer('1.7');
+checkAnswer('1.7');
 
 /*
 1.8
@@ -88,16 +92,25 @@ Create an array called colorLengths that contains two separate arrays:
 Bonus:
 - Instead of hardcoding a number for the length, can you write the string again and access its length property?
 */
-
-// checkAnswer('1.8');
+const colorLengths = [
+    ["pink", "pink".length],
+    ["red", "red".length]
+]
+checkAnswer('1.8');
 
 /*
 1.9
 - Create an array of arrays called favoriteColors.
 - The first nested array should have your name and your favorite color.
 - Add similar entries to the array for the rest of your group members.
+*/
 
-// checkAnswer('1.9');
+const favoriteColors = [
+    ["Louisa", "green"],
+    ["Merrilyn", "purple"]
+]
+
+checkAnswer('1.9');
 
 /*
 1.10 BONUS!!!
@@ -116,10 +129,10 @@ const manyColors = [
 ];
 const fewColors = ['red', 'yellow', 'blue'];
 
-const manyColorsLength = 0;
-const fewColorsLength = 0;
+const manyColorsLength = manyColors.length;
+const fewColorsLength = fewColors.length;
 
-// checkAnswer('1.10');
+checkAnswer('1.10');
 
 /* ______________________ PART 2 ______________________
 Indexes
@@ -130,35 +143,35 @@ Indexes
 Change the 10 below so that greenColor has a value of "green"
 */
 const colorsE = ['pink', 'purple', 'green', 'yellow'];
-const greenColor = colorsE[10];
+const greenColor = colorsE[2];
 
-// checkAnswer('2.1');
+checkAnswer('2.1');
 
 /*
 2.2
 Change the 10 below so that pinkColor has a value of "pink"
 */
 const colorsF = ['pink', 'purple', 'green', 'yellow'];
-const pinkColor = colorsF[10];
+const pinkColor = colorsF[0];
 
-// checkAnswer('2.2');
+checkAnswer('2.2');
 
 /*
 2.3
 Utilize the colorsG array to set purpleColor equal to "purple"
 */
 const colorsG = ['pink', 'purple', 'green', 'yellow'];
-const purpleColor = "";
+const purpleColor = colorsG[1];
 
-// checkAnswer('2.3');
+checkAnswer('2.3');
 
 /*
 2.4
 Create a variable called "yellowColor" and set it equal to the last value in the array below
 */
 const colorsH = ['pink', 'purple', 'green', 'yellow'];
-
-// checkAnswer('2.4');
+const yellowColor = colorsH[3]
+checkAnswer('2.4');
 
 /*
 2.5
@@ -169,9 +182,9 @@ const purples = ['lilac', 'grape', 'violet'];
 const pinks = ['bubble gum', 'rose', 'magenta', 'strawberry'];
 const oranges = ['tangerine', 'coral'];
 
-const fruits = [];
+const fruits = [purples[1], pinks[3], oranges[0]];
 
-// checkAnswer('2.5');
+checkAnswer('2.5');
 
 /*
 2.6
@@ -186,10 +199,10 @@ const colorTemps = [
     ['blue', 'cool'],
 ];
 
-const orangeColorAndTemp = [];
-const orangeColor = "";
+const orangeColorAndTemp = colorTemps[1];
+const orangeColor = colorTemps[1][0];
 
-// checkAnswer('2.6');
+checkAnswer('2.6');
 
 /*
 2.7 Bonus!!!
@@ -199,9 +212,9 @@ Change the 100 below so that lastWarmColor equals "yellow"
 Note: This method of accessing the last value in an array is extremely common
 */
 const warmColors = ['red', 'orange', 'yellow'];
-const lastWarmColor = warmColors[warmColors.length - 100];
+const lastWarmColor = warmColors[warmColors.length - 1];
 
-// checkAnswer('2.7');
+checkAnswer('2.7');
 
 /* ______________________ PART 3 ______________________
 Modifying Arrays
@@ -213,9 +226,9 @@ Change the empty quotes below so that 'red' is replaced with 'blue' in the coolC
 */
 
 const coolColors = ['red', 'green', 'purple'];
-coolColors[0] = '';
+coolColors[0] = 'blue';
 
-// checkAnswer('3.1');
+checkAnswer('3.1');
 
 /*
 3.2
@@ -223,11 +236,11 @@ Overwrite all the values in the blues array so that it's filled with 'navy', 'te
 */
 
 const blues = ['mustard', 'gold', 'sunflower'];
-blues[0] = '';
-blues[1] = '';
-blues[2] = '';
+blues[0] = 'navy';
+blues[1] = 'teal';
+blues[2] = 'aqua';
 
-// checkAnswer('3.2');
+checkAnswer('3.2');
 
 /*
 3.3
@@ -235,8 +248,9 @@ Overwrite 'lime green' in the array below to 'rose'
 */
 
 const reds = ['maroon', 'ruby', 'lime green', 'crimson'];
+reds[2] = 'rose'
 
-// checkAnswer('3.3');
+checkAnswer('3.3');
 
 /*
 3.4
@@ -246,8 +260,9 @@ array like we did at the end of Part 2.
 */
 
 const greens = ['granny smith', 'mint', 'sage', 'forest', 'sea foam', 'hunter green', 'emerald', 'neon green', 'viridian', 'red'];
+greens[greens.length - 1] = 'jade';
 
-// checkAnswer('3.4');
+checkAnswer('3.4');
 
 /*
 3.5
@@ -255,8 +270,9 @@ Without repeating 'charcoal' can you find a way to replace 'scarlet' below with 
 */
 const greys = ['smoke', 'charcoal', 'silver'];
 const neutrals = ['beige', 'khaki', 'scarlet', 'oatmeal'];
+neutrals[2] = greys[1];
 
-// checkAnswer('3.5');
+checkAnswer('3.5');
 
 /* ______________________ PART 4 ______________________
 Nested Arrays
@@ -273,10 +289,10 @@ const colorShadesA = [
     ['jet', 'raven', 'onyx'],
 ];
 
-const blackShades = colorShadesA[0];
-const favoriteBlack = blackShades[2];
+const blackShades = colorShadesA[1];
+const favoriteBlack = blackShades[1];
 
-// checkAnswer('4.1');
+checkAnswer('4.1');
 
 /*
 4.2
@@ -291,13 +307,13 @@ const colorShadesB = [
     ['bubble gum', 'rose', 'magenta'],
 ];
 
-const redShades = [];
-const pinkShades = [];
+const redShades = colorShadesB[0];
+const pinkShades = colorShadesB[1];
 
-const favoriteRed = '';
-const favoritePink = '';
+const favoriteRed = redShades[1];
+const favoritePink = pinkShades[0];
 
-// checkAnswer('4.2');
+checkAnswer('4.2');
 
 /*
 4.3
@@ -310,10 +326,10 @@ const colorShadesC = [
     ['tangerine', 'coral', 'clay', 'amber'],
 ];
 
-const favoritePurple = colorShadesC[0][0];
-const favoriteOrange = colorShadesC[0][0];
+var favoritePurple = colorShadesC[0][1];
+var favoriteOrange = colorShadesC[1][3];
 
-// checkAnswer('4.3');
+checkAnswer('4.3');
 
 /*
 4.4
@@ -327,11 +343,11 @@ const colorShadesD = [
     ['gold', 'sunflower', 'mustard'],
 ];
 
-const favoriteGreen = '';
-const favoriteBlue = '';
-const favoriteYellow = '';
+const favoriteGreen = colorShadesD[0][1];
+const favoriteBlue = colorShadesD[1][3];
+const favoriteYellow = colorShadesD[2][0];
 
-// checkAnswer('4.4');
+checkAnswer('4.4');
 
 /*
 4.5
@@ -354,11 +370,11 @@ const numbers = [
     ],
 ];
 
-const luckyNumber = 0;
-const unluckyNumber = 0;
-const favoriteNumber = 0;
+const luckyNumber = numbers[1][1][1];
+const unluckyNumber = numbers[0][0][0];
+const favoriteNumber = numbers[2][1][0];;
 
-// checkAnswer('4.5');
+checkAnswer('4.5');
 
 /* ______________________ STOP HERE ______________________
 Below this is a bunch of stuff you don't need to worry about yet!

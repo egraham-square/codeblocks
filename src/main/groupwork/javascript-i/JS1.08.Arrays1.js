@@ -96,6 +96,7 @@ Bonus:
 - Create an array of arrays called favoriteColors.
 - The first nested array should have your name and your favorite color.
 - Add similar entries to the array for the rest of your group members.
+*/
 
 // checkAnswer('1.9');
 
