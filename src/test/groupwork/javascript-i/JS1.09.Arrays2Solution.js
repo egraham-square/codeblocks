@@ -8,9 +8,9 @@ Change the value we're pushing to achieve a final array of: ["turquoise", "baby 
 */
 
 const lightBlues = ['turquoise', 'baby blue'];
-lightBlues.push('green');
+lightBlues.push('sky');
 
-// checkAnswer('1.1');
+checkAnswer('1.1');
 
 /*
 1.2
@@ -18,8 +18,9 @@ Perform one or more a push operations to achieve a final array of: ["royal", "de
 */
 
 const darkBlues = ['royal', 'denim'];
+darkBlues.push('navy');
 
-// checkAnswer('1.2');
+checkAnswer('1.2');
 
 /*
 1.3
@@ -27,8 +28,10 @@ Perform one or more a push operations to achieve a final array of: ["hot pink", 
 */
 
 const brightColors = ['hot pink'];
+brightColors.push('lime green');
+brightColors.push('aqua');
 
-// checkAnswer('1.3');
+checkAnswer('1.3');
 
 /*
 1.4
@@ -36,8 +39,9 @@ Perform one or more a push operations to achieve a final array of: ["bronze", ["
 */
 
 const metallics = ['bronze'];
+metallics.push(['gold','silver']);
 
-// checkAnswer('1.4');
+checkAnswer('1.4');
 
 /* ______________________ PART 2 ______________________
 Pop
@@ -51,9 +55,9 @@ We're popping from the wrong array! Change which array is being popped so that c
 const coolColors = ['purple', 'green', 'blue'];
 const warmColors = ['orange', 'red', 'yellow'];
 
-const coolColor = warmColors.pop();
+const coolColor = coolColors.pop();
 
-// checkAnswer('2.1');
+checkAnswer('2.1');
 
 /*
 2.2
@@ -62,9 +66,9 @@ Using one or more pop operations, set lightBrownColor equal to "tan"
 
 const lightBrowns = ['beige', 'khaki', 'tan'];
 
-const lightBrownColor = '';
+const lightBrownColor = lightBrowns.pop();
 
-// checkAnswer('2.2');
+checkAnswer('2.2');
 
 /*
 2.3
@@ -72,10 +76,11 @@ Using one or more pop operations, set blueColor equal to "teal"
 */
 
 const blues = ['aqua', 'teal', 'cobolt', 'navy'];
+blues.pop();
+blues.pop();
+const blueColor = blues.pop();
 
-const blueColor = '';
-
-// checkAnswer('2.3');
+checkAnswer('2.3');
 
 /*
 2.4
@@ -83,8 +88,11 @@ Use one or more pop operations to achieve a final array of: ["jade"]
 */
 
 const greens = ['jade', 'emerald', 'hunter green', 'forest'];
+greens.pop();
+greens.pop();
+greens.pop();
 
-// checkAnswer('2.4');
+checkAnswer('2.4');
 
 /* ______________________ PART 3 ______________________
 Shift
@@ -97,9 +105,9 @@ We're grabbing the last yellow color from the array, but let's grab the first co
 */
 
 const yellows = ['gold', 'saffron', 'sunflower'];
-const yellowColor = yellows.pop();
+const yellowColor = yellows.shift();
 
-// checkAnswer('3.1');
+checkAnswer('3.1');
 
 /*
 3.2
@@ -107,19 +115,19 @@ Use one or more shift operations to achieve a final array of: ['watermelon', 'ma
 */
 
 const pinks = ['rose', 'bubble gum', 'watermelon', 'magenta'];
-
-// checkAnswer('3.2');
-
+pinks.shift();
+pinks.shift();
+checkAnswer('3.2');
 /*
 3.3
 Using one or more shift operations, set purpleColor equal to "violet"
 */
 
 const purples = ['lilac', 'violet', 'indigo'];
+purples.shift();
+const purpleColor = purples.shift();
 
-const purpleColor = '';
-
-// checkAnswer('3.3');
+checkAnswer('3.3');
 
 /* ______________________ PART 4 ______________________
 Unshift
@@ -132,9 +140,9 @@ We're adding a new orange color to the end of the array, but let's add it to the
 */
 
 const oranges = ['tangerine', 'amber', 'clay'];
-oranges.push('coral');
+oranges.unshift('coral');
 
-// checkAnswer('4.1');
+checkAnswer('4.1');
 
 /*
 4.2
@@ -142,8 +150,10 @@ Use one or more unshift operations to achieve a final array of: ['charcoal', 'sm
 */
 
 const greys = ['slate', 'silver'];
+greys.unshift('smoke');
+greys.unshift('charcoal');
 
-// checkAnswer('4.2');
+checkAnswer('4.2');
 
 /*
 4.3
@@ -157,8 +167,9 @@ Use one or more unshift operations to achieve a final array of:
 const colorTemps = [
     ['cool', ['purple', 'blue', 'green']]
 ];
+colorTemps.unshift(['warm', ['red', 'yellow', 'orange']]);
 
-// checkAnswer('4.3');
+checkAnswer('4.3');
 
 /* ______________________ PART 5 ______________________
 Bonus
@@ -173,21 +184,31 @@ Note: you can use the return value from one array operation as the argument to a
 
 const reds = ['scarlet', 'ruby', 'cherry']
 const darkReds = ['burgundy', 'maroon']
+reds.push(darkReds.shift());
+reds.push(darkReds.shift());
 
-// checkAnswer('5.1');
+checkAnswer('5.1');
 
 /*
 5.2
 Using any (or all) of the operations we've learned (one or more times), fill in the rainbow array from the other two arrays, achieving a final value of: ['red', 'orange', 'yellow', 'green', 'blue', 'purple']
 
 Note: the other two arrays should end up empty.
+Bonus: can you get your solution down to 6 lines if it's not already?
 */
 
 const rainbow = []
 const primaries = ['red', 'yellow', 'blue'];
 const secondaries = ['orange', 'green', 'purple']
 
-// checkAnswer('5.2');
+rainbow.push(primaries.shift());
+rainbow.push(secondaries.shift());
+rainbow.push(primaries.shift());
+rainbow.push(secondaries.shift());
+rainbow.push(primaries.shift());
+rainbow.push(secondaries.shift());
+
+checkAnswer('5.2');
 
 /*
 5.3
@@ -196,8 +217,9 @@ Note: this can be done on a single line!
 */
 
 const flag = ['blue', 'red', 'white'];
+flag.push(flag.shift());
 
-// checkAnswer('5.3');
+checkAnswer('5.3');
 
 /*
 5.4
@@ -206,8 +228,9 @@ Note: this can be done on a single line!
 */
 
 const stoplight = ['green', 'yellow', 'red'];
+stoplight.unshift(stoplight.pop());
 
-// checkAnswer('5.4');
+checkAnswer('5.4');
 
 /* ______________________ STOP HERE ______________________
 Below this is a bunch of stuff you don't need to worry about yet!
